@@ -1,6 +1,6 @@
 /* Database schema to keep the structure of entire database. */
 CREATE DATABASE vetclinic
-CREATE TABLE public.animals
+CREATE TABLE animals
 (
     id integer NOT NULL,
     name "char" NOT NULL,
