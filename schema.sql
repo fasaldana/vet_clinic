@@ -82,3 +82,5 @@ CREATE TABLE specializations
         ON DELETE NO ACTION
         NOT VALID
 );
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
