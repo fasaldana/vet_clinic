@@ -84,3 +84,14 @@ CREATE TABLE specializations
 );
 
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- index to improve queries on visits table
+CREATE INDEX idx_animals_id
+ON visits(animals_id);
+
+CREATE INDEX idx_vets_id
+ON visits(vets_id);
+
+CREATE INDEX idx_email
+ON owners(email);
+
